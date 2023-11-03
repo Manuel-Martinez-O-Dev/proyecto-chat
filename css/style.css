@@ -1,0 +1,102 @@
+:root {
+    --color-1: #FF0000;
+    --color-2: #950101;
+    --color-3: #3D0000;
+    --color-4: #000000;
+    --color-5: #FFFFff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*general*/
+
+.d_f_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* contenedor general*/
+
+.cont {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+/*contenedor del perfil, panel del lado izquierdo*/
+
+.cont_perfil {
+    background: var(--color-4);
+    flex-direction: column;
+    width: 40vw;
+    height: 100vh;
+}
+.usuario {
+    margin-bottom: 1em;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: .3em;
+    color: var(--color-5);
+    border-bottom: 5px solid var(--color-1);
+}
+.perfil_img {
+    background: var(--color-4);
+    min-width: 150px;
+    min-height: 150px;
+    border-radius: 100%;
+    box-shadow: 0 0 10px var(--color-1);
+    overflow: hidden;
+}
+.perfil_img img {
+    width: 150px;
+    height: 150px;
+}
+#id_unico{
+    margin: 1em;
+    font-size: .8em;
+    color: var(--color-5);
+}
+textarea {
+    background: var(--color-5);
+    resize: none;
+    min-width: 150px;
+    max-width: 150px;
+    min-height: 100px;
+    max-height: 100px;
+    padding: 1em;
+    border-radius: 10px;
+}
+.boton {
+    margin: 1em;
+    padding: 5px;
+    width: 150px;
+    font-weight: bold;
+    border-radius: 10px;
+    background: var(--color-1);
+    color: var(--color-5);
+    cursor: pointer;
+    transition: all .3s;
+}
+.boton:hover {
+    background: var(--color-4);
+    color: var(--color-1);
+    box-shadow: 0 0 10px var(--color-1);
+}
+
+/*contenedor del chat, panel del lado derecho*/
+
+.cont_chat {
+    background: var(--color-5);
+    flex-grow: 1;
+}
+#chat {
+    width: 500px;
+    height: 500px;
+    background: var(--color-3);
+    border-radius: 10px;
+}
